@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans|Trade+Winds&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* This part is about setting the font's attribute */
+.logo {
+    color:wheat;
+    font-family: 'Trade Winds';
+    font-size: 3em;
+}
+.nav_links a{
+    color:wheat;
+    font-family: 'Odibee Sans';
+    font-size: 2em;
+    text-decoration: none;
+}
+.login_button button{
+    color:wheat;
+    font-family: 'Odibee Sans';
+    font-size: 2em;
+}
+
+
+
+/* This part is about using flex attribute to range the item in header */
+/*
+    The header contain three items. 
+        1. Logo
+        2. Nav Bar
+        3. The login button
+*/
+/*=====================================================================*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5% 20px 3%; /* Top Right Button Left*/
+    background-color: #242424;
+}
+/* End_Region========================================================= */
+
+
+/* This part is about setting the nav link */
+/*
+    Pay atteention to display: inline-block;
+        using this atribute will make the 
+        link list arrange horizontally not 
+        vertically.
+*/
+/*=========================================*/
+nav {
+    margin-left: -10%;
+}
+.nav_links {
+    list-style: none;
+}
+.nav_links li {
+    display: inline-block;
+    margin: 0px 20px;
+}
+/* End_Region============================= */
+
+
+
+/* This part is about the nav link's hover attribute */
+/*===================================================*/
+.nav_links a {
+    transition: 2s;
+}
+.nav_links a:hover {
+    color:#0088a9;
+}
+/* End_Region======================================= */
+
+
+
+/* This part is about the login button's hover attribute */
+/*=======================================================*/
+.login_button button{
+    padding: 5px 20px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    transition: 2s;
+}
+
+.login_button button:hover {
+    background-color: rgba(0,136,169,0.1);
+}
+/* End_Region=========================================== */
